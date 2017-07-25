@@ -1,0 +1,119 @@
+vm.swappiness = 10
+安装mysql驱动中
+安装mysql驱动完成
+Using python  /usr/bin/python2
+Setup ambari-server
+Copying /usr/share/java/mysql-connector-java.jar to /var/lib/ambari-server/resources
+JDBC driver was successfully initialized.
+Ambari Server 'setup' completed successfully.
+spawn ambari-server setup
+Using python  /usr/bin/python2
+Setup ambari-server
+Checking SELinux...
+SELinux status is 'disabled'
+Customize user account for ambari-server daemon [y/n] (n)? y
+y
+Enter user account for ambari-server daemon (root):Invalid username.
+Enter user account for ambari-server daemon (root):root
+Adjusting ambari-server permissions and ownership...
+Checking firewall status...
+Checking JDK...
+y
+[1] Oracle JDK 1.8 + Java Cryptography Extension (JCE) Policy Files 8
+[2] Oracle JDK 1.7 + Java Cryptography Extension (JCE) Policy Files 7
+[3] Custom JDK
+==============================================================================
+Enter choice (1): Invalid number.
+[1] Oracle JDK 1.8 + Java Cryptography Extension (JCE) Policy Files 8
+[2] Oracle JDK 1.7 + Java Cryptography Extension (JCE) Policy Files 7
+[3] Custom JDK
+==============================================================================
+Enter choice (1): 3
+WARNING: JDK must be installed on all hosts and JAVA_HOME must be valid on all hosts.
+WARNING: JCE Policy files are required for configuring Kerberos security. If you plan to use Kerberos,please make sure JCE Unlimited Strength Jurisdiction Policy Files are valid on all hosts.
+Path to JAVA_HOME: /usr/java/default
+Validating JDK on Ambari Server...done.
+Completing setup...
+Configuring database...
+Enter advanced database configuration [y/n] (n)? y
+Configuring database...
+==============================================================================
+Choose one of the following options:
+[1] - PostgreSQL (Embedded)
+[2] - Oracle
+[3] - MySQL
+[4] - PostgreSQL
+[5] - Microsoft SQL Server (Tech Preview)
+[6] - SQL Anywhere
+==============================================================================
+Enter choice (1): 3
+Hostname (localhost): vasp-manager
+Port (3306): 3306
+Database name (ambari): ambari
+Username (ambari): ambari
+Enter Database Password (bigdata): 
+Re-enter password: 
+Configuring ambari database...
+Copying JDBC drivers to server resources...
+Configuring remote database connection properties...
+WARNING: Before starting Ambari Server, you must run the following DDL against the database to create the schema: /var/lib/ambari-server/resources/Ambari-DDL-MySQL-CREATE.sql
+Proceed with configuring remote database connection properties [y/n] (y)? y
+Extracting system views...
+.ambari-admin-2.2.1.0.161.jar
+.....
+Adjusting ambari-server permissions and ownership...
+Ambari Server 'setup' completed successfully.
+Preparing...                ##################################################
+vmp-i18n                    ##################################################
+Preparing...                ##################################################
+vmp-customservice-drill     ##################################################
+Preparing...                ##################################################
+vmp-customservice-elasticsea##################################################
+Preparing...                ##################################################
+vmp-customservice-kafka-mana##################################################
+Preparing...                ##################################################
+vmp-customservice-vap-web   ##################################################
+Using python  /usr/bin/python2
+Starting ambari-server
+Ambari Server running with administrator privileges.
+Organizing resource files at /var/lib/ambari-server/resources...
+Server PID at: /var/run/ambari-server/ambari-server.pid
+Server out at: /var/log/ambari-server/ambari-server.out
+Server log at: /var/log/ambari-server/ambari-server.log
+Waiting for server start....................
+Ambari Server 'start' completed successfully.
+Loaded plugins: fastestmirror, security
+Setting up Install Process
+Loading mirror speeds from cached hostfile
+Resolving Dependencies
+--> Running transaction check
+---> Package dos2unix.x86_64 0:3.1-37.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package           Arch            Version              Repository         Size
+================================================================================
+Installing:
+ dos2unix          x86_64          3.1-37.el6           vrv-http           16 k
+
+Transaction Summary
+================================================================================
+Install       1 Package(s)
+
+Total download size: 16 k
+Installed size: 18 k
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : dos2unix-3.1-37.el6.x86_64                                   1/1 
+  Verifying  : dos2unix-3.1-37.el6.x86_64                                   1/1 
+
+Installed:
+  dos2unix.x86_64 0:3.1-37.el6                                                  
+
+Complete!
+安装server端完成

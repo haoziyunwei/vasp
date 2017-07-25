@@ -1,0 +1,242 @@
+添加hosts到/etc/hosts文件完成
+Loaded plugins: fastestmirror, security
+Setting up Install Process
+Determining fastest mirrors
+Package 2:vim-enhanced-7.4.629-5.el6.x86_64 already installed and latest version
+Package python-2.6.6-64.el6.x86_64 already installed and latest version
+Package 4:perl-5.10.1-141.el6_7.1.x86_64 already installed and latest version
+Package 32:bind-utils-9.8.2-0.47.rc1.el6.x86_64 already installed and latest version
+Package openssh-clients-5.3p1-117.el6.x86_64 already installed and latest version
+Package ntp-4.2.6p5-10.el6.centos.x86_64 already installed and latest version
+Package 2:vim-enhanced-7.4.629-5.el6.x86_64 already installed and latest version
+Package wget-1.12-8.el6.x86_64 already installed and latest version
+Package unzip-6.0-4.el6.x86_64 already installed and latest version
+Resolving Dependencies
+--> Running transaction check
+---> Package bind.x86_64 32:9.8.2-0.47.rc1.el6 will be installed
+--> Processing Dependency: portreserve for package: 32:bind-9.8.2-0.47.rc1.el6.x86_64
+---> Package createrepo.noarch 0:0.9.9-24.el6 will be installed
+--> Processing Dependency: python-deltarpm for package: createrepo-0.9.9-24.el6.noarch
+---> Package genisoimage.x86_64 0:1.1.9-12.el6 will be installed
+---> Package httpd.x86_64 0:2.2.15-53.el6.centos will be installed
+--> Processing Dependency: httpd-tools = 2.2.15-53.el6.centos for package: httpd-2.2.15-53.el6.centos.x86_64
+--> Processing Dependency: apr-util-ldap for package: httpd-2.2.15-53.el6.centos.x86_64
+--> Processing Dependency: /etc/mime.types for package: httpd-2.2.15-53.el6.centos.x86_64
+--> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.2.15-53.el6.centos.x86_64
+--> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.2.15-53.el6.centos.x86_64
+--> Running transaction check
+---> Package apr.x86_64 0:1.3.9-5.el6_2 will be installed
+---> Package apr-util.x86_64 0:1.3.9-3.el6_0.1 will be installed
+---> Package apr-util-ldap.x86_64 0:1.3.9-3.el6_0.1 will be installed
+---> Package httpd-tools.x86_64 0:2.2.15-53.el6.centos will be installed
+---> Package mailcap.noarch 0:2.1.31-2.el6 will be installed
+---> Package portreserve.x86_64 0:0.0.4-11.el6 will be installed
+---> Package python-deltarpm.x86_64 0:3.5-0.5.20090913git.el6 will be installed
+--> Processing Dependency: deltarpm = 3.5-0.5.20090913git.el6 for package: python-deltarpm-3.5-0.5.20090913git.el6.x86_64
+--> Running transaction check
+---> Package deltarpm.x86_64 0:3.5-0.5.20090913git.el6 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package             Arch       Version                     Repository     Size
+================================================================================
+Installing:
+ bind                x86_64     32:9.8.2-0.47.rc1.el6       vrv-local     4.0 M
+ createrepo          noarch     0.9.9-24.el6                vrv-local      96 k
+ genisoimage         x86_64     1.1.9-12.el6                vrv-local     348 k
+ httpd               x86_64     2.2.15-53.el6.centos        vrv-local     833 k
+Installing for dependencies:
+ apr                 x86_64     1.3.9-5.el6_2               vrv-local     123 k
+ apr-util            x86_64     1.3.9-3.el6_0.1             vrv-local      87 k
+ apr-util-ldap       x86_64     1.3.9-3.el6_0.1             vrv-local      15 k
+ deltarpm            x86_64     3.5-0.5.20090913git.el6     vrv-local      71 k
+ httpd-tools         x86_64     2.2.15-53.el6.centos        vrv-local      78 k
+ mailcap             noarch     2.1.31-2.el6                vrv-local      27 k
+ portreserve         x86_64     0.0.4-11.el6                vrv-local      23 k
+ python-deltarpm     x86_64     3.5-0.5.20090913git.el6     vrv-local      27 k
+
+Transaction Summary
+================================================================================
+Install      12 Package(s)
+
+Total download size: 5.7 M
+Installed size: 13 M
+Downloading Packages:
+--------------------------------------------------------------------------------
+Total                                           2.7 MB/s | 5.7 MB     00:02     
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Installing : apr-1.3.9-5.el6_2.x86_64                                    1/12 
+  Installing : apr-util-1.3.9-3.el6_0.1.x86_64                             2/12 
+  Installing : apr-util-ldap-1.3.9-3.el6_0.1.x86_64                        3/12 
+  Installing : httpd-tools-2.2.15-53.el6.centos.x86_64                     4/12 
+  Installing : deltarpm-3.5-0.5.20090913git.el6.x86_64                     5/12 
+  Installing : python-deltarpm-3.5-0.5.20090913git.el6.x86_64              6/12 
+  Installing : portreserve-0.0.4-11.el6.x86_64                             7/12 
+  Installing : mailcap-2.1.31-2.el6.noarch                                 8/12 
+  Installing : httpd-2.2.15-53.el6.centos.x86_64                           9/12 
+  Installing : 32:bind-9.8.2-0.47.rc1.el6.x86_64                          10/12 
+  Installing : createrepo-0.9.9-24.el6.noarch                             11/12 
+  Installing : genisoimage-1.1.9-12.el6.x86_64                            12/12 
+  Verifying  : mailcap-2.1.31-2.el6.noarch                                 1/12 
+  Verifying  : createrepo-0.9.9-24.el6.noarch                              2/12 
+  Verifying  : genisoimage-1.1.9-12.el6.x86_64                             3/12 
+  Verifying  : portreserve-0.0.4-11.el6.x86_64                             4/12 
+  Verifying  : apr-util-ldap-1.3.9-3.el6_0.1.x86_64                        5/12 
+  Verifying  : apr-1.3.9-5.el6_2.x86_64                                    6/12 
+  Verifying  : httpd-tools-2.2.15-53.el6.centos.x86_64                     7/12 
+  Verifying  : deltarpm-3.5-0.5.20090913git.el6.x86_64                     8/12 
+  Verifying  : 32:bind-9.8.2-0.47.rc1.el6.x86_64                           9/12 
+  Verifying  : httpd-2.2.15-53.el6.centos.x86_64                          10/12 
+  Verifying  : python-deltarpm-3.5-0.5.20090913git.el6.x86_64             11/12 
+  Verifying  : apr-util-1.3.9-3.el6_0.1.x86_64                            12/12 
+
+Installed:
+  bind.x86_64 32:9.8.2-0.47.rc1.el6     createrepo.noarch 0:0.9.9-24.el6       
+  genisoimage.x86_64 0:1.1.9-12.el6     httpd.x86_64 0:2.2.15-53.el6.centos    
+
+Dependency Installed:
+  apr.x86_64 0:1.3.9-5.el6_2                                                    
+  apr-util.x86_64 0:1.3.9-3.el6_0.1                                             
+  apr-util-ldap.x86_64 0:1.3.9-3.el6_0.1                                        
+  deltarpm.x86_64 0:3.5-0.5.20090913git.el6                                     
+  httpd-tools.x86_64 0:2.2.15-53.el6.centos                                     
+  mailcap.noarch 0:2.1.31-2.el6                                                 
+  portreserve.x86_64 0:0.0.4-11.el6                                             
+  python-deltarpm.x86_64 0:3.5-0.5.20090913git.el6                              
+
+Complete!
+Loaded plugins: fastestmirror, security
+Cleaning repos: vrv-local
+Cleaning up Everything
+Cleaning up list of fastest mirrors
+开始配置ntp...
+Shutting down ntpd: [60G[[0;31mFAILED[0;39m]
+Starting ntpd: [60G[[0;32m  OK  [0;39m]
+ntp 配置完成!
+开始配置selinux...
+selinux 配置完成
+开始配置iptables...
+iptables配置完成
+关闭THP...
+闭THP完成
+更新节点完成
+ jdk 安装中
+Preparing...                ##################################################
+jdk                         ##################################################
+Unpacking JAR files...
+	rt.jar...
+	jsse.jar...
+	charsets.jar...
+	tools.jar...
+	localedata.jar...
+	jfxrt.jar...
+ jdk 安装完成
+安装mysql中
+Loaded plugins: fastestmirror, security
+Setting up Remove Process
+Resolving Dependencies
+--> Running transaction check
+---> Package mysql-libs.x86_64 0:5.1.73-7.el6 will be erased
+--> Processing Dependency: libmysqlclient.so.16()(64bit) for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Processing Dependency: libmysqlclient.so.16(libmysqlclient_16)(64bit) for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Processing Dependency: mysql-libs for package: 2:postfix-2.6.6-6.el6_7.1.x86_64
+--> Running transaction check
+---> Package postfix.x86_64 2:2.6.6-6.el6_7.1 will be erased
+--> Processing Dependency: /usr/sbin/sendmail for package: cronie-1.4.4-15.el6_7.1.x86_64
+--> Running transaction check
+---> Package cronie.x86_64 0:1.4.4-15.el6_7.1 will be erased
+--> Processing Dependency: cronie = 1.4.4-15.el6_7.1 for package: cronie-anacron-1.4.4-15.el6_7.1.x86_64
+--> Running transaction check
+---> Package cronie-anacron.x86_64 0:1.4.4-15.el6_7.1 will be erased
+--> Processing Dependency: /etc/cron.d for package: crontabs-1.10-33.el6.noarch
+--> Processing Dependency: /etc/cron.d for package: sysstat-9.0.4-31.el6.x86_64
+--> Restarting Dependency Resolution with new changes.
+--> Running transaction check
+---> Package crontabs.noarch 0:1.10-33.el6 will be erased
+---> Package sysstat.x86_64 0:9.0.4-31.el6 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package Arch   Version          Repository                                Size
+================================================================================
+Removing:
+ mysql-libs
+         x86_64 5.1.73-7.el6     @anaconda-CentOS-201605220104.x86_64/6.8 4.0 M
+Removing for dependencies:
+ cronie  x86_64 1.4.4-15.el6_7.1 @anaconda-CentOS-201605220104.x86_64/6.8 174 k
+ cronie-anacron
+         x86_64 1.4.4-15.el6_7.1 @anaconda-CentOS-201605220104.x86_64/6.8  43 k
+ crontabs
+         noarch 1.10-33.el6      @anaconda-CentOS-201605220104.x86_64/6.8 2.4 k
+ postfix x86_64 2:2.6.6-6.el6_7.1
+                                 @anaconda-CentOS-201605220104.x86_64/6.8 9.7 M
+ sysstat x86_64 9.0.4-31.el6     @anaconda-CentOS-201605220104.x86_64/6.8 826 k
+
+Transaction Summary
+================================================================================
+Remove        6 Package(s)
+
+Installed size: 15 M
+Downloading Packages:
+Running rpm_check_debug
+Running Transaction Test
+Transaction Test Succeeded
+Running Transaction
+  Erasing    : sysstat-9.0.4-31.el6.x86_64                                  1/6 
+  Erasing    : crontabs-1.10-33.el6.noarch                                  2/6 
+  Erasing    : cronie-anacron-1.4.4-15.el6_7.1.x86_64                       3/6 
+  Erasing    : cronie-1.4.4-15.el6_7.1.x86_64                               4/6 
+  Erasing    : 2:postfix-2.6.6-6.el6_7.1.x86_64                             5/6 
+  Erasing    : mysql-libs-5.1.73-7.el6.x86_64                               6/6 
+  Verifying  : cronie-1.4.4-15.el6_7.1.x86_64                               1/6 
+  Verifying  : mysql-libs-5.1.73-7.el6.x86_64                               2/6 
+  Verifying  : cronie-anacron-1.4.4-15.el6_7.1.x86_64                       3/6 
+  Verifying  : crontabs-1.10-33.el6.noarch                                  4/6 
+  Verifying  : sysstat-9.0.4-31.el6.x86_64                                  5/6 
+  Verifying  : 2:postfix-2.6.6-6.el6_7.1.x86_64                             6/6 
+
+Removed:
+  mysql-libs.x86_64 0:5.1.73-7.el6                                              
+
+Dependency Removed:
+  cronie.x86_64 0:1.4.4-15.el6_7.1   cronie-anacron.x86_64 0:1.4.4-15.el6_7.1  
+  crontabs.noarch 0:1.10-33.el6      postfix.x86_64 2:2.6.6-6.el6_7.1          
+  sysstat.x86_64 0:9.0.4-31.el6     
+
+Complete!
+Preparing...                ##################################################
+MySQL-server                ##################################################
+
+PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
+To do so, start the server, then issue the following commands:
+
+/usr/bin/mysqladmin -u root password 'new-password'
+/usr/bin/mysqladmin -u root -h localhost.localdomain password 'new-password'
+
+Alternatively you can run:
+/usr/bin/mysql_secure_installation
+
+which will also give you the option of removing the test
+databases and anonymous user created by default.  This is
+strongly recommended for production servers.
+
+See the manual for more instructions.
+
+Please report any problems at http://bugs.mysql.com/
+
+Preparing...                ##################################################
+MySQL-client                ##################################################
+Starting MySQL.... SUCCESS! 
+安装mysql完成
+初始化mysql
+初始化mysql完成
+增加客户端完成
+Shutting down MySQL. SUCCESS! 
+Starting MySQL.. SUCCESS! 

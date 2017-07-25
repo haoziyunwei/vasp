@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>终端行为总览</title>
+	<base target="_self" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+    .welcome{width:70%;margin:0 auto;}
+    #myTab,#myTabContent{width:70%;margin:0 auto;}
+    .table td{vertical-align:middle;}
+    .table td b{float:right;}
+    .tab-pane h4{padding-top:15px;color:#5bc0de;font-size:14px;}
+    .tab-pane h4 span{margin-right:5px;}
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="welcome">
+      <h1>Welcome to 
+        <span class="btn btn-lg btn-info">VASP 1.1</span>
+
+      </h1><br/>
+    </div>
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">开始使用 VASP</a></li>
+      <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">HELP</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab"><br/><br/>
+        <table class="table table-bordered">
+            <tr>
+                <td width="25%"><b>系统ROOT:</b></td><td width="75%">用户名：root<br/>登录密码：root</td>
+            </tr>
+            <tr>
+                <td><b>登录地址:</b></td>
+                <td>地址：<a href="http://localhost:8080/views/ADMIN_VIEW/2.2.1.0/INSTANCE/" target="_blank" title="http://localhost:8080/views/ADMIN_VIEW/2.2.1.0/INSTANCE/">http://localhost:8080/views/ADMIN_VIEW/2.2.1.0/INSTANCE/</a><br/>用户名：admin<br/>密码：admin</td>
+            </tr>
+            <tr>
+                <td><b>数据库:</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>YUM源地址:</b></td>
+                <td><a href="http://localhost/centos" target="_blank" title="http://localhost/centos">http://localhost/centos</a></td>
+            </tr>
+            <tr>
+                <td><b>帮助文档:</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><b>NTP服务:</b></td><td></td>
+            </tr>
+        </table>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab"><br>
+        <h4><span class="glyphicon glyphicon-hand-right"></span>本系统提供什么服务</h4>
+        <p>简洁、直观、强悍的大数据开发框架，让大数据开发更迅速、简单。</p>
+        <h4><span class="glyphicon glyphicon-hand-right"></span>本系统提供什么服务</h4>
+        <p>简洁、直观、强悍的大数据开发框架，让大数据开发更迅速、简单。</p>
+        <h4><span class="glyphicon glyphicon-hand-right"></span>本系统提供什么服务</h4>
+        <p>简洁、直观、强悍的大数据开发框架，让大数据开发更迅速、简单。</p>
+        <h4><span class="glyphicon glyphicon-hand-right"></span>本系统提供什么服务</h4>
+        <p>简洁、直观、强悍的大数据开发框架，让大数据开发更迅速、简单。</p>
+      </div>
+    </div> 
+</body>
+</html>
